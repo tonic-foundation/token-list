@@ -4,7 +4,6 @@ import tokenlist from '../tokens/near.tokenlist.json';
 
 export interface TokenList {
   readonly name: string;
-  readonly logoURI: string;
   readonly tags: { [tag: string]: TagDetails };
   readonly timestamp: string;
   readonly tokens: TokenInfo[];
@@ -16,21 +15,19 @@ export interface TagDetails {
 }
 
 export interface TokenInfo extends FungibleTokenMetadata {
-  readonly chainId: number;
   readonly address: string;
-  readonly name: string;
-  readonly decimals: number;
-  readonly symbol: string;
+  readonly nearEnv: NearEnv;
   readonly logoURI?: string;
   readonly tags?: string[];
   readonly extensions?: TokenExtensions;
 }
 
+export type BridgeType = 'rainbow' | 'allbridge';
+
 export interface TokenExtensions {
+  readonly bridgeType?: BridgeType;
   readonly website?: string;
   readonly bridgeContract?: string;
-  readonly assetContract?: string;
-  readonly address?: string;
   readonly explorer?: string;
   readonly twitter?: string;
   readonly github?: string;
@@ -39,14 +36,12 @@ export interface TokenExtensions {
   readonly discord?: string;
   readonly tonicNearMarketId?: string;
   readonly coingeckoId?: string;
-  readonly imageUrl?: string;
   readonly description?: string;
 }
 
 export enum Strategy {
   GitHub = 'GitHub',
   Static = 'Static',
-  CDN = 'CDN',
 }
 
 const queryJsonFiles = async (files: string[]) => {
@@ -60,8 +55,7 @@ const queryJsonFiles = async (files: string[]) => {
         console.info(
           `@tonic-foundation/token-list: falling back to static repository.`
         );
-        // return tokenlist;
-        return [];
+        return tokenlist;
       }
     })
   )) as TokenList[];
@@ -77,13 +71,25 @@ export class StaticTokenListResolutionStrategy {
   };
 }
 
+export class GitHubTokenListResolutionStrategy {
+  repositories = [
+    'https://raw.githubusercontent.com/tonic-foundation/token-list/master/src/tokens/near.tokenlist.json',
+  ];
+
+  resolve = () => {
+    return queryJsonFiles(this.repositories);
+  };
+}
+
+
 export class TokenListProvider {
   static strategies = {
     [Strategy.Static]: new StaticTokenListResolutionStrategy(),
+    [Strategy.GitHub]: new StaticTokenListResolutionStrategy(),
   };
 
   resolve = async (
-    strategy: Strategy = Strategy.CDN
+    strategy: Strategy = Strategy.Static
   ): Promise<TokenListContainer> => {
     return new TokenListContainer(
       // @ts-ignore
@@ -101,15 +107,15 @@ export class TokenListContainer {
     );
   };
 
-  filterByChainId = (chainId: number | NearEnv) => {
+  filterByNearEnv = (nearEnv: NearEnv) => {
     return new TokenListContainer(
-      this.tokenList.filter((item) => item.chainId === chainId)
+      this.tokenList.filter((item) => item.nearEnv === nearEnv)
     );
   };
 
-  excludeByChainId = (chainId: number | NearEnv) => {
+  excludeByNearEnv = (nearEnv: NearEnv) => {
     return new TokenListContainer(
-      this.tokenList.filter((item) => item.chainId !== chainId)
+      this.tokenList.filter((item) => item.nearEnv !== nearEnv)
     );
   };
 
