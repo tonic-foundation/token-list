@@ -1,8 +1,8 @@
-name: Development Preview
+name: Docs Preview
 
 on:
   push:
-    branches: [develop]
+    branches: [master]
 
 jobs:
   publish-docs-preview:
