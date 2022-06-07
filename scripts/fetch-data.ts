@@ -3,14 +3,15 @@ import { ftMetadata, FungibleTokenMetadata } from '@tonic-foundation/token';
 import { getNearConfig, NearEnv } from '@tonic-foundation/config';
 import { Near, keyStores } from 'near-api-js';
 import { readFileSync, writeFileSync } from 'fs';
-import { TokenExtensions, TokenInfo, TokenList } from '..';
+import { TokenExtensions, TokenInfo, TokenList } from '../src';
 
 const TOKEN_LIST_PATH = 'src/tokens/near.tokenlist.json';
-const BASE_IMAGE_URL = 'https://raw.githubusercontent.com/tonic-foundation/token-list/master/images';
+const BASE_IMAGE_URL =
+  'https://raw.githubusercontent.com/tonic-foundation/token-list/master/images';
 
 export interface TokenOptions {
   token_id: string;
-  network: NearEnv
+  network: NearEnv;
 }
 
 const getExplorerUrl = (nearEnv: NearEnv, address: string) => {
@@ -31,7 +32,7 @@ const getBridgeInfo = (nearEnv: NearEnv, address: string): TokenExtensions => {
     if (address.includes('token.a11bd.near')) {
       return {
         bridgeType: 'allbridge',
-        bridgeContract: 'token.a11bd.near'
+        bridgeContract: 'token.a11bd.near',
       };
     }
   }
@@ -55,7 +56,7 @@ const saveBase64Image = (address: string, base64Img: string) => {
   console.log(`writing image to ${filename}`);
   writeFileSync(path, image);
   return filename;
-}
+};
 
 const saveSvg = (address: string, svg: string) => {
   const startIdx = svg.indexOf(',') + 1;
@@ -64,21 +65,28 @@ const saveSvg = (address: string, svg: string) => {
   const path = `images/${filename}`;
   writeFileSync(path, data);
   return filename;
-}
+};
 
 const saveImage = (address: string, image: string) => {
-  if (image.startsWith('data:image/svg+xml,') || image.startsWith('data:image/svg,')) {
+  if (
+    image.startsWith('data:image/svg+xml,') ||
+    image.startsWith('data:image/svg,')
+  ) {
     saveSvg(address, image);
   } else {
     return saveBase64Image(address, image);
   }
-}
+};
 
-const addToList = (address: string, nearEnv: NearEnv, metadata: FungibleTokenMetadata) => {
+const addToList = (
+  address: string,
+  nearEnv: NearEnv,
+  metadata: FungibleTokenMetadata
+) => {
   const file = readFileSync(TOKEN_LIST_PATH);
   const tokenlist = JSON.parse(file.toString()) as TokenList;
   const tokens = tokenlist.tokens;
-  if (tokens.find(t => t.address === address)) {
+  if (tokens.find((t) => t.address === address)) {
     console.log(`${address} already exists in token list`);
     return;
   }
@@ -104,16 +112,13 @@ const addToList = (address: string, nearEnv: NearEnv, metadata: FungibleTokenMet
     extensions: {
       website: '',
       explorer: getExplorerUrl(nearEnv, address),
-      ...bridgeInfo
-    }
+      ...bridgeInfo,
+    },
   };
   const newList: TokenList = {
     ...tokenlist,
     timestamp: new Date().toUTCString(),
-    tokens: [
-      ...tokens,
-      tokenInfo
-    ]
+    tokens: [...tokens, tokenInfo],
   };
   writeFileSync(TOKEN_LIST_PATH, JSON.stringify(newList, null, 4));
   console.log('successfully wrote token to token list');
@@ -121,12 +126,16 @@ const addToList = (address: string, nearEnv: NearEnv, metadata: FungibleTokenMet
 
 const main = async () => {
   const args = parse<TokenOptions>({
+    // @ts-ignore
     token_id: String,
     // @ts-ignore
-    network: String
+    network: String,
   });
 
-  const near = new Near({ ...getNearConfig(args.network), keyStore: new keyStores.InMemoryKeyStore() });
+  const near = new Near({
+    ...getNearConfig(args.network),
+    keyStore: new keyStores.InMemoryKeyStore(),
+  });
   const account = await near.account('');
   const metadata = await ftMetadata(account, args.token_id);
   addToList(args.token_id, args.network, metadata);
