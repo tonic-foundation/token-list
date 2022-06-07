@@ -1,5 +1,5 @@
-import { ftMetadata, FungibleTokenMetadata } from '@tonic-foundation/token';
-import { getNearConfig, NearEnv } from '@tonic-foundation/config';
+import { FungibleTokenMetadata } from '@tonic-foundation/token';
+import { NearEnv } from '@tonic-foundation/config';
 import tokenlist from '../tokens/near.tokenlist.json';
 
 export interface TokenList {
@@ -81,7 +81,6 @@ export class GitHubTokenListResolutionStrategy {
   };
 }
 
-
 export class TokenListProvider {
   static strategies = {
     [Strategy.Static]: new StaticTokenListResolutionStrategy(),
@@ -99,7 +98,7 @@ export class TokenListProvider {
 }
 
 export class TokenListContainer {
-  constructor(private tokenList: TokenInfo[]) { }
+  constructor(private tokenList: TokenInfo[]) {}
 
   filterByTag = (tag: string) => {
     return new TokenListContainer(
