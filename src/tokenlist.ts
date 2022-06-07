@@ -1,6 +1,6 @@
 import { FungibleTokenMetadata } from '@tonic-foundation/token';
 import { NearEnv } from '@tonic-foundation/config';
-import tokenlist from '../tokens/near.tokenlist.json';
+import tokenlist from './tokens/near.tokenlist.json';
 
 export interface TokenList {
   readonly name: string;
