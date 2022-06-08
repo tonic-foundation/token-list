@@ -12,6 +12,7 @@ const BASE_IMAGE_URL =
 export interface TokenOptions {
   token_id: string;
   network: NearEnv;
+  overwrite: boolean;
 }
 
 const getExplorerUrl = (nearEnv: NearEnv, address: string) => {
@@ -53,14 +54,13 @@ const saveBase64Image = (address: string, base64Img: string) => {
   const filename = `${address}.${ext}`;
   const path = `images/${filename}`;
   const image = Buffer.from(data, 'base64');
-  console.log(`writing image to ${filename}`);
   writeFileSync(path, image);
   return filename;
 };
 
 const saveSvg = (address: string, svg: string) => {
   const startIdx = svg.indexOf(',') + 1;
-  const data = decodeURI(svg.substring(startIdx));
+  const data = decodeURI(svg.substring(startIdx).replace(/%23/g, '#'));
   const filename = `${address}.svg`;
   const path = `images/${filename}`;
   writeFileSync(path, data);
@@ -81,14 +81,18 @@ const saveImage = (address: string, image: string) => {
 const addToList = (
   address: string,
   nearEnv: NearEnv,
-  metadata: FungibleTokenMetadata
+  metadata: FungibleTokenMetadata,
+  overwrite: boolean = false
 ) => {
   const file = readFileSync(TOKEN_LIST_PATH);
   const tokenlist = JSON.parse(file.toString()) as TokenList;
-  const tokens = tokenlist.tokens;
+  let tokens = tokenlist.tokens;
   if (tokens.find((t) => t.address === address)) {
-    console.log(`${address} already exists in token list`);
-    return;
+    if (!overwrite) {
+      console.log(`${address} already exists in token list`);
+      return;
+    }
+    tokens = tokens.filter(t => t.address !== address);
   }
   const bridgeInfo = getBridgeInfo(nearEnv, address);
   const { icon, ...metadataWithoutIcon } = metadata;
@@ -130,6 +134,7 @@ const main = async () => {
     token_id: String,
     // @ts-ignore
     network: String,
+    overwrite: Boolean,
   });
 
   const near = new Near({
@@ -138,7 +143,7 @@ const main = async () => {
   });
   const account = await near.account('');
   const metadata = await ftMetadata(account, args.token_id);
-  addToList(args.token_id, args.network, metadata);
+  addToList(args.token_id, args.network, metadata, args.overwrite);
 };
 
 main();
