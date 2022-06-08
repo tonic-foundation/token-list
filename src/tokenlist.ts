@@ -84,7 +84,7 @@ export class GitHubTokenListResolutionStrategy {
 export class TokenListProvider {
   static strategies = {
     [Strategy.Static]: new StaticTokenListResolutionStrategy(),
-    [Strategy.GitHub]: new StaticTokenListResolutionStrategy(),
+    [Strategy.GitHub]: new GitHubTokenListResolutionStrategy(),
   };
 
   resolve = async (
@@ -98,7 +98,7 @@ export class TokenListProvider {
 }
 
 export class TokenListContainer {
-  constructor(private tokenList: TokenInfo[]) {}
+  constructor(private tokenList: TokenInfo[]) { }
 
   filterByTag = (tag: string) => {
     return new TokenListContainer(
