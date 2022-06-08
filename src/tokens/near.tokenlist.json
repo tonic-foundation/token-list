@@ -17,7 +17,7 @@
     "tokens": [
         {
             "spec": "ft-1.0.0",
-            "name": "AD#6: Checkout Roketo at https://roke.to",
+            "name": "AD#7: Roketo is going to the MOON! https://roke.to",
             "symbol": "AD",
             "reference": null,
             "reference_hash": null,
@@ -25,7 +25,7 @@
             "icon": "",
             "address": "adtoken.near",
             "nearEnv": "mainnet",
-            "logoURI": "https://raw.githubusercontent.com/tonic-foundation/token-list/master/images/adtoken.near.gif",
+            "logoURI": "https://raw.githubusercontent.com/tonic-foundation/token-list/master/images/adtoken.near.jpeg",
             "tags": [],
             "extensions": {
                 "website": "",
@@ -76,6 +76,7 @@
             "icon": "",
             "address": "berryclub.ek.near",
             "nearEnv": "mainnet",
+            "logoURI": "https://raw.githubusercontent.com/tonic-foundation/token-list/master/images/berryclub.ek.near.svg",
             "tags": [],
             "extensions": {
                 "website": "",
@@ -92,6 +93,7 @@
             "icon": "",
             "address": "coin.asac.near",
             "nearEnv": "mainnet",
+            "logoURI": "https://raw.githubusercontent.com/tonic-foundation/token-list/master/images/coin.asac.near.svg",
             "tags": [],
             "extensions": {
                 "website": "",
@@ -142,6 +144,7 @@
             "icon": "",
             "address": "farm.berryclub.ek.near",
             "nearEnv": "mainnet",
+            "logoURI": "https://raw.githubusercontent.com/tonic-foundation/token-list/master/images/farm.berryclub.ek.near.svg",
             "tags": [],
             "extensions": {
                 "website": "",
@@ -175,6 +178,7 @@
             "icon": "",
             "address": "ft.nekotoken.near",
             "nearEnv": "mainnet",
+            "logoURI": "https://raw.githubusercontent.com/tonic-foundation/token-list/master/images/ft.nekotoken.near.svg",
             "tags": [],
             "extensions": {
                 "website": "",
@@ -242,6 +246,7 @@
             "icon": "",
             "address": "linear-protocol.near",
             "nearEnv": "mainnet",
+            "logoURI": "https://raw.githubusercontent.com/tonic-foundation/token-list/master/images/linear-protocol.near.svg",
             "tags": [],
             "extensions": {
                 "website": "",
@@ -258,6 +263,7 @@
             "icon": "",
             "address": "meta-pool.near",
             "nearEnv": "mainnet",
+            "logoURI": "https://raw.githubusercontent.com/tonic-foundation/token-list/master/images/meta-pool.near.svg",
             "tags": [],
             "extensions": {
                 "website": "",
@@ -274,6 +280,7 @@
             "icon": "",
             "address": "meta-token.near",
             "nearEnv": "mainnet",
+            "logoURI": "https://raw.githubusercontent.com/tonic-foundation/token-list/master/images/meta-token.near.svg",
             "tags": [],
             "extensions": {
                 "website": "",
@@ -443,6 +450,7 @@
             "icon": "",
             "address": "token.v2.ref-finance.near",
             "nearEnv": "mainnet",
+            "logoURI": "https://raw.githubusercontent.com/tonic-foundation/token-list/master/images/token.v2.ref-finance.near.svg",
             "tags": [],
             "extensions": {
                 "website": "",
@@ -475,6 +483,7 @@
             "icon": "",
             "address": "utopia.secretskelliessociety.near",
             "nearEnv": "mainnet",
+            "logoURI": "https://raw.githubusercontent.com/tonic-foundation/token-list/master/images/utopia.secretskelliessociety.near.svg",
             "tags": [],
             "extensions": {
                 "website": "",
@@ -541,6 +550,7 @@
             "icon": "",
             "address": "0316eb71485b0ab14103307bf65a021042c6d380.factory.bridge.near",
             "nearEnv": "mainnet",
+            "logoURI": "https://raw.githubusercontent.com/tonic-foundation/token-list/master/images/0316eb71485b0ab14103307bf65a021042c6d380.factory.bridge.near.svg",
             "tags": [
                 "rainbow"
             ],
@@ -561,6 +571,7 @@
             "icon": "",
             "address": "0d8775f648430679a709e98d2b0cb6250d2887ef.factory.bridge.near",
             "nearEnv": "mainnet",
+            "logoURI": "https://raw.githubusercontent.com/tonic-foundation/token-list/master/images/0d8775f648430679a709e98d2b0cb6250d2887ef.factory.bridge.near.svg",
             "tags": [
                 "rainbow"
             ],
@@ -601,6 +612,7 @@
             "icon": "",
             "address": "1ab43204a195a0fd37edec621482afd3792ef90b.factory.bridge.near",
             "nearEnv": "mainnet",
+            "logoURI": "https://raw.githubusercontent.com/tonic-foundation/token-list/master/images/1ab43204a195a0fd37edec621482afd3792ef90b.factory.bridge.near.svg",
             "tags": [
                 "rainbow"
             ],
@@ -621,6 +633,7 @@
             "icon": "",
             "address": "1f9840a85d5af5bf1d1762f925bdaddc4201f984.factory.bridge.near",
             "nearEnv": "mainnet",
+            "logoURI": "https://raw.githubusercontent.com/tonic-foundation/token-list/master/images/1f9840a85d5af5bf1d1762f925bdaddc4201f984.factory.bridge.near.svg",
             "tags": [
                 "rainbow"
             ],
@@ -641,6 +654,7 @@
             "icon": "",
             "address": "2260fac5e5542a773aa44fbcfedf7c193bc2c599.factory.bridge.near",
             "nearEnv": "mainnet",
+            "logoURI": "https://raw.githubusercontent.com/tonic-foundation/token-list/master/images/2260fac5e5542a773aa44fbcfedf7c193bc2c599.factory.bridge.near.svg",
             "tags": [
                 "rainbow"
             ],
@@ -661,6 +675,7 @@
             "icon": "",
             "address": "3ea8ea4237344c9931214796d9417af1a1180770.factory.bridge.near",
             "nearEnv": "mainnet",
+            "logoURI": "https://raw.githubusercontent.com/tonic-foundation/token-list/master/images/3ea8ea4237344c9931214796d9417af1a1180770.factory.bridge.near.svg",
             "tags": [
                 "rainbow"
             ],
@@ -681,6 +696,7 @@
             "icon": "",
             "address": "4691937a7508860f876c9c0a2a617e7d9e945d4b.factory.bridge.near",
             "nearEnv": "mainnet",
+            "logoURI": "https://raw.githubusercontent.com/tonic-foundation/token-list/master/images/4691937a7508860f876c9c0a2a617e7d9e945d4b.factory.bridge.near.svg",
             "tags": [
                 "rainbow"
             ],
@@ -701,6 +717,7 @@
             "icon": "",
             "address": "501ace9c35e60f03a2af4d484f49f9b1efde9f40.factory.bridge.near",
             "nearEnv": "mainnet",
+            "logoURI": "https://raw.githubusercontent.com/tonic-foundation/token-list/master/images/501ace9c35e60f03a2af4d484f49f9b1efde9f40.factory.bridge.near.svg",
             "tags": [
                 "rainbow"
             ],
@@ -721,6 +738,7 @@
             "icon": "",
             "address": "514910771af9ca656af840dff83e8264ecf986ca.factory.bridge.near",
             "nearEnv": "mainnet",
+            "logoURI": "https://raw.githubusercontent.com/tonic-foundation/token-list/master/images/514910771af9ca656af840dff83e8264ecf986ca.factory.bridge.near.svg",
             "tags": [
                 "rainbow"
             ],
@@ -762,6 +780,7 @@
             "icon": "",
             "address": "6b175474e89094c44da98b954eedeac495271d0f.factory.bridge.near",
             "nearEnv": "mainnet",
+            "logoURI": "https://raw.githubusercontent.com/tonic-foundation/token-list/master/images/6b175474e89094c44da98b954eedeac495271d0f.factory.bridge.near.svg",
             "tags": [
                 "rainbow"
             ],
@@ -802,6 +821,7 @@
             "icon": "",
             "address": "9aeb50f542050172359a0e1a25a9933bc8c01259.factory.bridge.near",
             "nearEnv": "mainnet",
+            "logoURI": "https://raw.githubusercontent.com/tonic-foundation/token-list/master/images/9aeb50f542050172359a0e1a25a9933bc8c01259.factory.bridge.near.svg",
             "tags": [
                 "rainbow"
             ],
@@ -822,6 +842,7 @@
             "icon": "",
             "address": "a0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.factory.bridge.near",
             "nearEnv": "mainnet",
+            "logoURI": "https://raw.githubusercontent.com/tonic-foundation/token-list/master/images/a0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.factory.bridge.near.svg",
             "tags": [
                 "rainbow"
             ],
@@ -842,6 +863,7 @@
             "icon": "",
             "address": "aaaaaa20d9e0e2461697782ef11675f668207961.factory.bridge.near",
             "nearEnv": "mainnet",
+            "logoURI": "https://raw.githubusercontent.com/tonic-foundation/token-list/master/images/aaaaaa20d9e0e2461697782ef11675f668207961.factory.bridge.near.svg",
             "tags": [
                 "rainbow"
             ],
@@ -862,6 +884,7 @@
             "icon": "",
             "address": "b8919522331c59f5c16bdfaa6a121a6e03a91f62.factory.bridge.near",
             "nearEnv": "mainnet",
+            "logoURI": "https://raw.githubusercontent.com/tonic-foundation/token-list/master/images/b8919522331c59f5c16bdfaa6a121a6e03a91f62.factory.bridge.near.svg",
             "tags": [
                 "rainbow"
             ],
@@ -942,6 +965,7 @@
             "icon": "",
             "address": "d9c2d319cd7e6177336b0a9c93c21cb48d84fb54.factory.bridge.near",
             "nearEnv": "mainnet",
+            "logoURI": "https://raw.githubusercontent.com/tonic-foundation/token-list/master/images/d9c2d319cd7e6177336b0a9c93c21cb48d84fb54.factory.bridge.near.svg",
             "tags": [
                 "rainbow"
             ],
@@ -962,6 +986,7 @@
             "icon": "",
             "address": "dac17f958d2ee523a2206206994597c13d831ec7.factory.bridge.near",
             "nearEnv": "mainnet",
+            "logoURI": "https://raw.githubusercontent.com/tonic-foundation/token-list/master/images/dac17f958d2ee523a2206206994597c13d831ec7.factory.bridge.near.svg",
             "tags": [
                 "rainbow"
             ],
@@ -1002,6 +1027,7 @@
             "icon": "",
             "address": "f5cfbc74057c610c8ef151a439252680ac68c6dc.factory.bridge.near",
             "nearEnv": "mainnet",
+            "logoURI": "https://raw.githubusercontent.com/tonic-foundation/token-list/master/images/f5cfbc74057c610c8ef151a439252680ac68c6dc.factory.bridge.near.svg",
             "tags": [
                 "rainbow"
             ],
@@ -1093,5 +1119,5 @@
             }
         }
     ],
-    "timestamp": "Wed, 08 Jun 2022 04:04:29 GMT"
+    "timestamp": "Wed, 08 Jun 2022 06:45:47 GMT"
 }

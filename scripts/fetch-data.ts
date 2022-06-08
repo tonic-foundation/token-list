@@ -72,7 +72,7 @@ const saveImage = (address: string, image: string) => {
     image.startsWith('data:image/svg+xml,') ||
     image.startsWith('data:image/svg,')
   ) {
-    saveSvg(address, image);
+    return saveSvg(address, image);
   } else {
     return saveBase64Image(address, image);
   }
