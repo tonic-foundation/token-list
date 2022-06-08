@@ -6,7 +6,7 @@
     "esModuleInterop": true,
     "moduleResolution": "node",
     "skipLibCheck": true,
-    "outDir": "lib",
+    "outDir": "dist/main",
     "baseUrl": "src",
     "declaration": true,
     "paths": {
