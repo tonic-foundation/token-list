@@ -467,6 +467,7 @@
             "icon": "",
             "address": "usn",
             "nearEnv": "mainnet",
+            "logoURI": "https://raw.githubusercontent.com/skiran017/token-list/2a1ae3a423930c95090602818b7f4c809d081769/images/usn.png",
             "tags": [],
             "extensions": {
                 "website": "",
@@ -517,6 +518,7 @@
             "icon": "",
             "address": "wrap.near",
             "nearEnv": "mainnet",
+            "logoURI": "https://raw.githubusercontent.com/skiran017/token-list/2a1ae3a423930c95090602818b7f4c809d081769/images/wrap.near.png",
             "tags": [],
             "extensions": {
                 "website": "",
