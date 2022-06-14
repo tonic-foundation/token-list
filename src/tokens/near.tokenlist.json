@@ -592,6 +592,7 @@
             "icon": "",
             "address": "111111111117dc0aa78b770fa6a738034120c302.factory.bridge.near",
             "nearEnv": "mainnet",
+            "logoURI": "https://raw.githubusercontent.com/tonic-foundation/token-list/master/images/111111111117dc0aa78b770fa6a738034120c302.factory.bridge.near.png",
             "tags": [
                 "rainbow"
             ],
@@ -798,7 +799,7 @@
             "reference": "",
             "reference_hash": "",
             "decimals": 18,
-            "icon": "",
+            "icon": "https://s2.coinmarketcap.com/static/img/coins/64x64/2502.png",
             "address": "6f259637dcd74c767781e37bc6133cd6a68aa161.factory.bridge.near",
             "nearEnv": "mainnet",
             "tags": [
@@ -905,6 +906,7 @@
             "icon": "",
             "address": "bed4ab0019ff361d83ddeb74883dac8a70f5ea1e.factory.bridge.near",
             "nearEnv": "mainnet",
+            "logoURI": "https://raw.githubusercontent.com/tonic-foundation/token-list/master/images/bed4ab0019ff361d83ddeb74883dac8a70f5ea1e.factory.bridge.near.png",
             "tags": [
                 "rainbow"
             ],
@@ -928,6 +930,7 @@
             "tags": [
                 "rainbow"
             ],
+            "logoURI": "https://raw.githubusercontent.com/tonic-foundation/token-list/master/images/c02aaa39b223fe8d0a0e5c4f27ead9083c756cc2.factory.bridge.near.png",
             "extensions": {
                 "website": "",
                 "explorer": "https://nearblocks.io/address/c02aaa39b223fe8d0a0e5c4f27ead9083c756cc2.factory.bridge.near",
@@ -945,6 +948,7 @@
             "icon": "",
             "address": "c944e90c64b2c07662a292be6244bdf05cda44a7.factory.bridge.near",
             "nearEnv": "mainnet",
+            "logoURI": "https://raw.githubusercontent.com/tonic-foundation/token-list/master/images/c944e90c64b2c07662a292be6244bdf05cda44a7.factory.bridge.near.png",
             "tags": [
                 "rainbow"
             ],
@@ -1007,6 +1011,7 @@
             "icon": "",
             "address": "de30da39c46104798bb5aa3fe8b9e0e1f348163f.factory.bridge.near",
             "nearEnv": "mainnet",
+            "logoURI": "https://raw.githubusercontent.com/tonic-foundation/token-list/master/images/de30da39c46104798bb5aa3fe8b9e0e1f348163f.factory.bridge.near.png",
             "tags": [
                 "rainbow"
             ],
