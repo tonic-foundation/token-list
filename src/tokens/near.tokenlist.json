@@ -464,9 +464,10 @@
             "reference": null,
             "reference_hash": null,
             "decimals": 18,
-            "icon": "https://raw.githubusercontent.com/tonic-foundation/token-list/master/images/usn.svg",
+            "icon": "",
             "address": "usn",
             "nearEnv": "mainnet",
+            "logoURI": "https://raw.githubusercontent.com/tonic-foundation/token-list/master/images/usn.svg",
             "tags": [],
             "extensions": {
                 "website": "",
@@ -514,9 +515,10 @@
             "reference": null,
             "reference_hash": null,
             "decimals": 24,
-            "icon": "https://raw.githubusercontent.com/tonic-foundation/token-list/master/images/wrap.near.svg",
+            "icon": "",
             "address": "wrap.near",
             "nearEnv": "mainnet",
+            "logoURI": "https://raw.githubusercontent.com/tonic-foundation/token-list/master/images/wrap.near.svg",
             "tags": [],
             "extensions": {
                 "website": "",
