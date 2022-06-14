@@ -799,9 +799,10 @@
             "reference": "",
             "reference_hash": "",
             "decimals": 18,
-            "icon": "https://s2.coinmarketcap.com/static/img/coins/64x64/2502.png",
+            "icon": "",
             "address": "6f259637dcd74c767781e37bc6133cd6a68aa161.factory.bridge.near",
             "nearEnv": "mainnet",
+            "logoURI": "https://raw.githubusercontent.com/tonic-foundation/token-list/master/images/6f259637dcd74c767781e37bc6133cd6a68aa161.factory.bridge.near.png",
             "tags": [
                 "rainbow"
             ],
