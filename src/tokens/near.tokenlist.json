@@ -17,6 +17,23 @@
     "tokens": [
         {
             "spec": "ft-1.0.0",
+            "name": "NEAR Protocol",
+            "symbol": "NEAR",
+            "reference": null,
+            "reference_hash": null,
+            "decimals": 24,
+            "icon": "",
+            "address": "near",
+            "nearEnv": "mainnet",
+            "logoURI": "https://raw.githubusercontent.com/tonic-foundation/token-list/master/images/near.svg",
+            "tags": [],
+            "extensions": {
+                "website": "",
+                "explorer": "https://nearblocks.io/address/near"
+            }
+        },
+        {
+            "spec": "ft-1.0.0",
             "name": "AD#7: Roketo is going to the MOON! https://roke.to",
             "symbol": "AD",
             "reference": null,
