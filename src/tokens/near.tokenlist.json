@@ -1125,7 +1125,24 @@
                 "bridgeType": "allbridge",
                 "bridgeContract": "token.a11bd.near"
             }
+        },
+        {
+            "spec": "ft-1.0.0",
+            "name": "Tether USD",
+            "symbol": "USDt",
+            "reference": null,
+            "reference_hash": null,
+            "decimals": 6,
+            "icon": "",
+            "address": "usdt.tether-token.near",
+            "nearEnv": "mainnet",
+            "logoURI": "https://raw.githubusercontent.com/tonic-foundation/token-list/master/images/usdt.tether-token.near.svg",
+            "tags": [],
+            "extensions": {
+                "website": "",
+                "explorer": "https://nearblocks.io/address/usdt.tether-token.near"
+            }
         }
     ],
-    "timestamp": "Wed, 08 Jun 2022 06:45:47 GMT"
+    "timestamp": "Thu, 19 Jan 2023 08:15:56 GMT"
 }
